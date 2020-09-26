@@ -87,14 +87,15 @@ public class fibonacci extends JFrame {
 				do
 				{
 					num3 = num1 +num2;
-					Numeros.addElement(num3);
+					Numeros.addElement("interacion "+cont+"  "+" "+num3);
 					num1 = num2;
 					num2 = num3;
+					cont +=1;
 				}while(cont<itera);
 				list.setModel(Numeros);			
 			}
 		});
-		btnNewButton.setBounds(36, 133, 117, 23);
+		btnNewButton.setBounds(10, 112, 142, 23);
 		contentPane.add(btnNewButton);
 		
 		
